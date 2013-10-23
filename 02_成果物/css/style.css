@@ -1,0 +1,31 @@
+body {
+  width: 1000px;
+  font-family: Meiryo;
+  border: 1px solid currentColor;
+}
+
+div#menu_hedder {
+  display: table-cell;
+  height: 25px;
+  width: 1000px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 1px 1px 1px #ffffff;
+  font-color: black;
+  font-size: 90%;
+  border: 1px solid currentColor;
+  background: -ms-linear-gradient(#FFFAFA 0%, #DCDCDC 50%, #D3D3D3 51%, #C0C0C0 100%);
+}
+
+div#menu_left {
+  display: table-cell;
+  height: auto;
+  width: 200px;
+  text-align: left;
+  vertical-align: middle;
+  text-shadow: 1px 1px 1px #ffffff;
+  font-color: black;
+  font-size: 12px;
+  border: 1px solid currentColor;
+}
+
