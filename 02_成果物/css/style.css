@@ -32,7 +32,7 @@ div#menu_left {
   text-align: left;
   vertical-align: middle;
   text-shadow: 1px 1px 1px #ffffff;
-  font-color: black;
+  color: black;
   font-size: 12px;
   border: 1px solid currentColor;
 }
@@ -47,4 +47,41 @@ div#main {
 div#main h3 {
   font-size: 36px;
   text-align: center;
+}
+
+
+table#consult {
+  width: 90%;
+  border: 1px solid currentColor;
+}
+
+td#headline {
+  background: steelblue;
+  color: snow;
+  font-weight: 900;
+}
+
+td#number {
+  background: steelblue;
+  color: snow;
+  font-weight: 900;
+}
+
+td#thread {
+  background: steelblue;
+  color: snow;
+  font-weight: 900;
+  text-align: left;
+  vertical-align: top;
+}
+
+td#element {
+  background: steelblue;
+  color: snow;
+  font-weight: 900;
+}
+
+td#reference {
+  color: black;
+  text-align: left;
 }

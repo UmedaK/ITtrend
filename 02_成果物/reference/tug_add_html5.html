@@ -51,7 +51,7 @@
     </table>
     &nbsp<font size="2.5px"><a href="#">参考資料</a></font><br>
     <table>
-      <tr><td><img src="../images/list.jpg">&nbsp<a href="#">追加タグ一覧</a></td></tr>
+      <tr><td><img src="../images/list.jpg">&nbsp<span>追加タグ一覧</span></td></tr>
       <tr><td><img src="../images/list.jpg">&nbsp<a href="#">変更タグ一覧</a></td></tr
       <tr><td><img src="../images/list.jpg">&nbsp<a href="#">廃止タグ一覧</a></td></tr>
     </table>
@@ -60,41 +60,45 @@
 </div>
 <div id="main">
   <h3>追加タグの要素一覧</h3>
-  <table border=1>
-    <tr><td>No</td><td>分類</td><td>要素</td><td>説明</td></tr>
-    <tr><td>1</td><td rowspan="9">文章構造化</td><td>section</td><td>文書の構造を明示する要素。見出し要素h1～h6とともに使う事が可能</td></tr>
-    <tr><td>2</td><td>article</td><td>ブログのエントリやニュース記事のように独立したセクションを示す要素</td></tr>
-    <tr><td>3</td><td>aside</td><td>補足やバナーなどなくても文書全体には影響しないセクションを示す要素</td></tr>
-    <tr><td>4</td><td>hgroup</td><td>複数の見出し要素h1-h6をまとめる要素</td></tr>
-    <tr><td>5</td><td>header</td><td>文章やセクションのヘッダーを示す要素</td></tr>
-    <tr><td>6</td><td>footer</td><td>文書やセクションのフッターを示す要素。作者・著作権の情報を含める事が可能</td></tr>
-    <tr><td>7</td><td>nav</td><td>文書のナビゲーションがあるセクションを示す要素</td></tr>
-    <tr><td>8</td><td>figure</td><td>例えば、画像とキャプションなどを1つのまとまりとして示す要素</td></tr>
-    <tr><td>9</td><td>figcaption</td><td>figure要素のキャプションを示す要素</td></tr>
-    <tr><td>10</td><td rowspan="8">テキストの意味づけ</td><td>mark</td><td>文書内の文字列を参照のためにハイライトさせる要素</td></tr>
-    <tr><td>11</td><td>time</td><td>文字列が日付や時間である事を示す要素</td></tr>
-    <tr><td>12</td><td>data</td><td>文字列がデータである事を示す要素</td></tr>
-    <tr><td>13</td><td>ruby</td><td>漢字にふりがな（ルビ）をふるための要素</td></tr>
-    <tr><td>14</td><td>rt</td><td>ふりがな（ルビ）を指定する要素</td></tr>
-    <tr><td>15</td><td>rp</td><td>ルビに対応していないブラウザでルビを括弧に入れて表示するために括弧を記述する要素。ルビに対応するブラウザでは表示されない</td></tr>
-    <tr><td>16</td><td>bdi</td><td>アラビア語など方向が異なるテキストにおいて、混乱しないように前後と隔離する部分を示す要素</td></tr>
-    <tr><td>17</td><td>wbr</td><td>改行しても良い位置を指定する要素</td></tr>
-    <tr><td>18</td><td rowspan="6">リソース埋め込み</td><td>video</td><td>動画ファイルを参照して埋め込む要素</td></tr>
-    <tr><td>19</td><td>audio</td><td>オーディオファイルを参照して埋め込む要素</td></tr>
-    <tr><td>20</td><td>source</td><td>video/audio要素において、異なる形式の利用可能な複数のストリームを参照する要素</td></tr>
-    <tr><td>21</td><td>track</td><td>video/audio要素にテキストトラック（字幕）を提供する要素</td></tr>
-    <tr><td>22</td><td>embed</td><td>プラグインコンテンツを示す要素</td></tr>
-    <tr><td>23</td><td>canvas</td><td>動的にビットマップグラフィックス記述するキャンバスを作成する要素</td></tr>
-    <tr><td>24</td><td rowspan="5">ユーザーとの対話</td><td>command</td><td>ユーザーが呼び出し可能なコマンドを示す要素</td></tr>
-    <tr><td>25</td><td>details</td><td>ユーザーがオンデマンドに参照できる追加情報を示す要素</td></tr>
-    <tr><td>26</td><td>summary</td><td>details要素においてその概要、凡例、またはキャプションを示す要素</td></tr>
-    <tr><td>27</td><td>datalist</td><td>input要素でコンボボックスを実現するための選択肢のリストを示す要素</td></tr>
-    <tr><td>28</td><td>keygen</td><td>公開鍵暗号の秘密鍵と公開鍵ペアを生成する要素</td></tr>
-    <tr><td>29</td><td rowspan="3">値の表示</td><td>output</td><td>スクリプトによる計算結果など出力のための要素</td></tr>
-    <tr><td>30</td><td>progress</td><td>タスクの完了度合いを表示する要素</td></tr>
-    <tr><td>31</td><td>meter</td><td>ディスク使用量のような測定値を表示する要素</td></tr>
+  <div align="center">
+  <table id="consult" bordercolor="black">
+    <tr><td id="headline">No</td><td id="headline">分類</td><td id="headline">要素</td><td id="headline">説明</td></tr>
+    <tr><td id="number">1</td><td id="thread" rowspan="9">文章構造化</td><td id="element">section</td><td id="reference">文書の構造を明示する要素。見出し要素h1～h6とともに使う事が可能</td></tr>
+    <tr><td id="number">2</td><td id="element">article</td><td id="reference">ブログのエントリやニュース記事のように独立したセクションを示す要素</td></tr>
+    <tr><td id="number">3</td><td id="element">aside</td><td id="reference">補足やバナーなどなくても文書全体には影響しないセクションを示す要素</td></tr>
+    <tr><td id="number">4</td><td id="element">hgroup</td><td id="reference">複数の見出し要素h1-h6をまとめる要素</td></tr>
+    <tr><td id="number">5</td><td id="element">header</td><td id="reference">文章やセクションのヘッダーを示す要素</td></tr>
+    <tr><td id="number">6</td><td id="element">footer</td><td id="reference">文書やセクションのフッターを示す要素。作者・著作権の情報を含める事が可能</td></tr>
+    <tr><td id="number">7</td><td id="element">nav</td><td id="reference">文書のナビゲーションがあるセクションを示す要素</td></tr>
+    <tr><td id="number">8</td><td id="element">figure</td><td id="reference">例えば、画像とキャプションなどを1つのまとまりとして示す要素</td></tr>
+    <tr><td id="number">9</td><td id="element">figcaption</td><td id="reference">figure要素のキャプションを示す要素</td></tr>
+    <tr><td id="number">10</td><td id="thread" rowspan="8">テキストの意味づけ</td><td id="element">mark</td><td id="reference">文書内の文字列を参照のためにハイライトさせる要素</td></tr>
+    <tr><td id="number">11</td><td id="element">time</td><td id="reference">文字列が日付や時間である事を示す要素</td></tr>
+    <tr><td id="number">12</td><td id="element">data</td><td id="reference">文字列がデータである事を示す要素</td></tr>
+    <tr><td id="number">13</td><td id="element">ruby</td><td id="reference">漢字にふりがな（ルビ）をふるための要素</td></tr>
+    <tr><td id="number">14</td><td id="element">rt</td><td id="reference">ふりがな（ルビ）を指定する要素</td></tr>
+    <tr><td id="number">15</td><td id="element">rp</td><td id="reference">ルビに対応していないブラウザでルビを括弧に入れて表示するために括弧を記述する要素。<br>ルビに対応するブラウザでは表示されない</td></tr>
+    <tr><td id="number">16</td><td id="element">bdi</td><td id="reference">アラビア語など方向が異なるテキストにおいて、混乱しないように前後と隔離する部分を示す要素</td></tr>
+    <tr><td id="number">17</td><td id="element">wbr</td><td id="reference">改行しても良い位置を指定する要素</td></tr>
+    <tr><td id="number">18</td><td id="thread" rowspan="6">リソース埋め込み</td><td id="element">video</td><td id="reference">動画ファイルを参照して埋め込む要素</td></tr>
+    <tr><td id="number">19</td><td id="element">audio</td><td id="reference">オーディオファイルを参照して埋め込む要素</td></tr>
+    <tr><td id="number">20</td><td id="element">source</td><td id="reference">video/audio要素において、異なる形式の利用可能な複数のストリームを参照する要素</td></tr>
+    <tr><td id="number">21</td><td id="element">track</td><td id="reference">video/audio要素にテキストトラック（字幕）を提供する要素</td></tr>
+    <tr><td id="number">22</td><td id="element">embed</td><td id="reference">プラグインコンテンツを示す要素</td></tr>
+    <tr><td id="number">23</td><td id="element">canvas</td><td id="reference">動的にビットマップグラフィックス記述するキャンバスを作成する要素</td></tr>
+    <tr><td id="number">24</td><td id="thread" rowspan="5">ユーザーとの対話</td><td id="element">command</td><td id="reference">ユーザーが呼び出し可能なコマンドを示す要素</td></tr>
+    <tr><td id="number">25</td><td id="element">details</td><td id="reference">ユーザーがオンデマンドに参照できる追加情報を示す要素</td></tr>
+    <tr><td id="number">26</td><td id="element">summary</td><td id="reference">details要素においてその概要、凡例、またはキャプションを示す要素</td></tr>
+    <tr><td id="number">27</td><td id="element">datalist</td><td id="reference">input要素でコンボボックスを実現するための選択肢のリストを示す要素</td></tr>
+    <tr><td id="number">28</td><td id="element">keygen</td><td id="reference">公開鍵暗号の秘密鍵と公開鍵ペアを生成する要素</td></tr>
+    <tr><td id="number">29</td><td id="thread" rowspan="3">値の表示</td><td id="element">output</td><td id="reference">スクリプトによる計算結果など出力のための要素</td></tr>
+    <tr><td id="number">30</td><td id="element">progress</td><td id="reference">タスクの完了度合いを表示する要素</td></tr>
+    <tr><td id="number">31</td><td id="element">meter</td><td id="reference">ディスク使用量のような測定値を表示する要素</td></tr>
   </table>
 </div>
+<br>
+</div>
+
 </div>
 </body>
 </html>
